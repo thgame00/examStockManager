@@ -1,0 +1,23 @@
+<ion-view title="Stock Portfolio" id="page1">
+  <ion-content padding="true" class="has-header">
+    <h3 id="stockPortfolio-heading1" style="color:#000000;font-weight:300;">Choose stock</h3>
+    
+    <form id="stockPortfolio-form3" class="list">
+      <label class="item item-select" id="stockPortfolio-select1">
+        <span class="input-label">Select</span>
+        
+        <select ng-model="mdl.stock">
+          <option value='1'>Apple</option>
+          <option value='2'>General Electric</option>
+          <option value='3'>Starbucks</option>
+          <option value='4'>Walgreens</option>
+        </select>
+      
+      </label>
+    </form>
+    
+    <button id="stockPortfolio-button1" class="button button-positive button-block"
+    ui-sref="stock({ stock: mdl.stock })">Check Stock</button>
+  
+  </ion-content>
+</ion-view>

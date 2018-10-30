@@ -1,0 +1,15 @@
+<ion-view title="Stock" id="page2">
+  
+  <ion-content padding="true" class="has-header">
+    <h3 id="stock-heading2" style="color:#000000;font-weight:300;">Your stock will appear here:</h3>
+    
+    <h4>Stock Symbol: {{ symbol }} </h4>
+    <h4>Current price in $: {{ currentPrice }} </h4>
+    <h4>Date of analysis: {{ date }} </h4>
+    <h4>Trend: {{ trend }} </h4>
+    <h4 style="color:{{ colour }}"> {{ decision }} </h4>
+
+    <a ui-sref="stockPortfolio()" id="stock-button2" class="button button-positive button-block">Back</a>
+  </ion-content>
+
+</ion-view>
